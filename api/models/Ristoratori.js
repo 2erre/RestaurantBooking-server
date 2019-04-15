@@ -22,7 +22,7 @@ module.exports = {
     },
     company: {
       type: 'string',
-      required: false
+      required: true
     },
 
 /*
