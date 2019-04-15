@@ -20,7 +20,7 @@ module.exports = {
       minLength: 8,
       required: true
     },
-    rist: {
+    company: {
       type: 'string',
       required: true
     },
