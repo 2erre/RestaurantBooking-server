@@ -8,7 +8,7 @@ module.exports = {
     },
     cognome: {
       type: 'string',
-      required: true,
+      required: true
     },
     email: {
       type: 'string',
@@ -20,7 +20,7 @@ module.exports = {
       minLength: 8,
       required: true
     },
-    company: {
+    rist: {
       type: 'string',
       required: true
     },
