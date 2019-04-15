@@ -49,9 +49,9 @@ module.exports.routes = {
   '/addRist': { view: 'addRist' },
   //'/addPren': { view: 'addPren' },
 
-  //'/eventi': 'EventsController.baseEvents',
+  '/eventi': 'EventsController.baseEvents',
   //'/eventiorg': 'RistoratoriController.baseEventsOrg',
-  '/addRist': 'RistoratoriController.aggRist',
+  '/addRist': 'RistoratoriController.orgCompany',
 
   'post /login': 'AuthController.login',
 
@@ -68,7 +68,6 @@ module.exports.routes = {
   'get /signupOrg': {
     view: 'signupOrg'
   }
-  //
 
   /***************************************************************************
   *                                                                          *

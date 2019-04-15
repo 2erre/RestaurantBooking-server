@@ -88,7 +88,7 @@
       "password": {
         "type": "string"
       },
-      "rist": {
+      "company": {
         "type": "string"
       },
       "id": {

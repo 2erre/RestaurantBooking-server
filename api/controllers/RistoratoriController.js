@@ -13,7 +13,7 @@ module.exports = {
         rest: true
     },
 
-    aggRist: (req, res) => {
+    orgCompany: (req, res) => {
     Ristoratori.find().exec( (err, org) => {
             return res.view('addRist',{addRist: org});
 
