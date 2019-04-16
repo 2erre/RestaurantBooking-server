@@ -13,7 +13,7 @@ module.exports = {
         rest: true
     },
       // Prove pagine
-  /*  baseRests: (req, res) => {
+    baseRests: (req, res) => {
         Ristoranti.find().exec((err, rests) => {
             return res.view('rests', { rests: rests });
         });
@@ -24,4 +24,4 @@ module.exports = {
             return res.view('restris', { restRis: rests });
         });
      }
-   };*/
+   };
