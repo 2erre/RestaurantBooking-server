@@ -12,7 +12,8 @@ module.exports = {
         shortcuts: true,
         rest: true
     },
-      // Prove pagine
+    // Prove pagine
+    /*
     baseRests: (req, res) => {
         Ristoranti.find().exec((err, rests) => {
             return res.view('rests', { rests: rests });
@@ -23,5 +24,5 @@ module.exports = {
         Ristoranti.find().exec((err, rests) => {
             return res.view('restris', { restRis: rests });
         });
-     }
+     }*/
    };
