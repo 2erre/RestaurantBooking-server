@@ -3,7 +3,17 @@
     "disponibilita": [],
     "ristoranti": [],
     "ristoratori": [],
-    "user": []
+    "user": [
+      {
+        "nome": "qwe",
+        "cognome": "qwe",
+        "email": "franco@alice.com",
+        "password": "$2b$10$p4skKLeACm2yTZUIVUjlsu9Fp6c05lXaGFA0AqY0b49yLqYsroqBe",
+        "createdAt": "2019-04-16T16:44:30.530Z",
+        "updatedAt": "2019-04-16T16:44:30.530Z",
+        "id": 1
+      }
+    ]
   },
   "schema": {
     "disponibilita": {
@@ -136,6 +146,8 @@
     "disponibilita": {},
     "ristoranti": {},
     "ristoratori": {},
-    "user": {}
+    "user": {
+      "id": 1
+    }
   }
 }

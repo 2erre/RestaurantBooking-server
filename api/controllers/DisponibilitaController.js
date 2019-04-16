@@ -13,9 +13,9 @@ module.exports = {
 //      rest: true
 //  },
 
-  getMia: function (req, res) {
+  getMia: function (req, res) {  // prova GET Disponibilita
       Disponibilita.find()
-      .populate('IdRistorante')
+      .populate('IdRistorante') // join con Ristoranti
       .exec(function (err, disp) {
           if (err) {
               return res.json(err);
@@ -27,7 +27,7 @@ module.exports = {
       })
   },
 //----------------------------------------------------------------------------
-  get_by_IdRistorante: function (req, res) {
+  get_by_IdRistorante: function (req, res) { // GET disponibilita?IdRistorante=ID
       var IdR = req.param('IdRistorante');
       console.log(NomeRis);
       Disponibilita.find({ where: { IdRistorante: IdR } })
@@ -43,7 +43,7 @@ module.exports = {
       })
   },
 //-----------------------------------------------------------------------
-  get_by_NomeRis: async function(req, res) {
+  get_by_NomeRis: async function(req, res) { // GET disponibilita?Nome=NOME
      var IdR='0';
      var NomeRis = req.param('Nome');
      console.log(NomeRis);
@@ -71,7 +71,7 @@ module.exports = {
       })
   },
 // ------------------------------------------------------------------------
-  baseDisp: (req, res) => {
+  baseDisp: (req, res) => { // prova view(Disponibilita Join Ristoranti)
       Disponibilita.find()
       .populate('IdRistorante')
       .exec( (err, r_disp) => {

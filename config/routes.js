@@ -44,12 +44,11 @@ module.exports.routes = {
        view: 'loginOrg'
   },
 
-  '/disp': 'DisponibilitaController.baseDisp',
-  '/addDisp': { view: 'addDisp' },
-  '/addRist': { view: 'addRist' },
-  //'/addPren': { view: 'addPren' },
-   //'/eventi': 'EventsController.baseEvents',
-  
+  '/disp': 'DisponibilitaController.baseDisp', // view di prova controller
+  '/addDisp': { view: 'addDisp' },            // view di prova view
+  //'/addRist': { view: 'addRist' },
+
+  //  aggiungi record Ristoranti
   '/addRist': 'RistoratoriController.orgCompany',
 
   'post /login': 'AuthController.login',

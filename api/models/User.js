@@ -9,6 +9,7 @@ var bcrypt = require('bcrypt');
 
 module.exports = {
   attributes: {
+    //struttura tabella
     nome: {
       type: 'string',
       required: true
@@ -27,12 +28,16 @@ module.exports = {
       minLength: 6,
       required: true
     },
+    //cancello passw prima di visualizzare in json
     toJSON: function() {
       var obj = this.toObject();
       delete obj.password;
       return obj;
     }
   },
+
+  // cripto prima di mettere nel database
+
   beforeCreate: function(user, cb) {
     bcrypt.genSalt(10, function(err, salt) {
       bcrypt.hash(user.password, salt, function(err, hash) {

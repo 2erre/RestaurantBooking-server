@@ -12,11 +12,11 @@ module.exports = {
         shortcuts: true,
         rest: true
     },
+    // Visualizza pagina addRist
 
     orgCompany: (req, res) => {
     Ristoratori.find().exec( (err, org) => {
             return res.view('addRist',{addRist: org});
-
         });
     },
 

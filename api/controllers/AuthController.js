@@ -14,9 +14,8 @@
          shortcuts: false,
          rest: false
      },
-
+// Login Cliente
      login: function(req, res) {
-
          passport.authenticate('local', function(err, user, info) {
              if ((err) || (!user)) {
                  return res.send({
@@ -31,7 +30,7 @@
          })(req, res);
      },
 
-
+// Login Ristoratore
      loginOrg: function(req, res) {
       passport.authenticate('orgStrat', function(err, org, info) {
           if ((err) || (!org)) {
@@ -50,30 +49,13 @@
       })(req, res);
   },
 
-/*
-        loginOrg: function(req, res) {
 
-         passport.authenticate('orgStrat', function(err, org, info) {
-             if ((err) || (!org)) {
-                 return res.send({
-                     message: info.message,
-                     org: org
-                 });
-             }
-             req.logIn(org, function(err) {
-                 if (err) res.send(err);
-                 return res.redirect('/addRist');
-                });
-         })(req, res);
-
-     },
-*/
-    logoutOrg: function(req, res) {
+    logoutOrg: function(req, res) { //logout ristoratore
          req.logout();
          res.redirect('/');
      },
 
-     logout: function(req, res) {
+     logout: function(req, res) { //logout cliente
          req.logout();
          res.redirect('/');
      },
