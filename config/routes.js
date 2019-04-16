@@ -48,9 +48,8 @@ module.exports.routes = {
   '/addDisp': { view: 'addDisp' },
   '/addRist': { view: 'addRist' },
   //'/addPren': { view: 'addPren' },
-
-  '/eventi': 'EventsController.baseEvents',
-  //'/eventiorg': 'RistoratoriController.baseEventsOrg',
+   //'/eventi': 'EventsController.baseEvents',
+  
   '/addRist': 'RistoratoriController.orgCompany',
 
   'post /login': 'AuthController.login',
